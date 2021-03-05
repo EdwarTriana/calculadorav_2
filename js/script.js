@@ -25,7 +25,7 @@ function calcular(){
         resultado(result)
         if(place === "0"){
             result = (place / document.getElementById("numero0").innerHTML )
-          }else if(result === Infinity){
+          }else if(result === Infinity){//se compara result si es similar a Infinity
             alert("No puedes dividir por cero")
           }
       }
