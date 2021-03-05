@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--estilos css de bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Calculadora V2</title>
+</head>
+<body>
+    <div class="container justify-content center">
+
+        <h1 class="tittle"> Calculadora v2</h1>
+
+        <table class="table table-danger w-50 ">
+            <thead>
+                <tr>
+                    <td class="screen" colspan="4" id="result">0</td>
+                </tr>
+                <tr>
+                    <td  class="empty" colspan="4"></td>
+                </tr>
+            </thead>
+            <tbody class=" justify-content-center">
+              <tr class="p-4 col-lg-3" >
+                <th scope="row"><button id="numero" class="  btn btn-primary p-4 col-lg-3" onclick= "place('7')">7</button></th>
+                <td><button id="numero"class=" btn btn-primary p-4 col-lg-3" onclick= "place('8')">8</button></td>
+                <td><button id="numero"class=" btn btn-primary p-4 col-lg-3" onclick= "place('9')">9</button></td>
+                <td><button id="data-operador"class=" operador btn btn-primary p-4 col-lg-3" onclick= "place('+')">+</button></td>
+              </tr>
+              <tr class="p-4 col-lg-3">
+                <th scope="row"><button id="numero" class="  btn btn-primary p-4 col-lg-3" onclick= "place('4')">4</button></th>
+                <td><button id="numero"class="  btn btn-primary p-4 col-lg-3"onclick= "place('5')">5</button ></td>
+                <td><button id="numero"class="  btn btn-primary p-4 col-lg-3" onclick= "place('6')">6</button></td>
+                <td><button id="data-operador"class=" operador btn btn-primary p-4 col-lg-3"onclick= "place('-')">-</button></td>
+              </tr>
+              <tr class="p-4 col-lg-3">
+                <th scope="row"><button id="numero" class=" numero btn btn-primary p-4 col-md-2"onclick= "place('1')">1</button></th>
+                <td><button id="numero" class=" btn btn-primary p-4 col-lg-3" onclick= "place('2')">2</button></td>
+                <td><button id="numero" class="  btn btn-primary p-4 col-lg-3"onclick= "place('3')">3</button></td>
+                <td><button id="data-operador"class="operador btn btn-primary p-4 col-lg-3" onclick= "place('*')">*</button></td>
+              </tr>
+              <tr >
+                <th scope="row"><button id="numero0" class="  btn btn-primary p-4 "onclick= "place('0')">0</button></th>
+                <td><button id="division" class=" operador btn btn-primary p-4 "onclick = "place('/')">/</button></td>
+              </tr>
+              <tr>
+                <th scope="row"><button id="data-delete" class=" btn btn-success p-4" onclick= "borrar('borrar')">Borrar</button></th>
+                <td><button class=" btn btn-primary p-4" onclick= "place('.')">.</button></td>
+                <td><button  id="data-resultado"class=" operador btn btn-warning p-4" onclick= "calcular('=')">=</button></td>
+              </tr>
+            </tbody>
+          </table>
+
+    </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
+
+
+
+
