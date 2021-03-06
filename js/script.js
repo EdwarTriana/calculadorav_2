@@ -1,7 +1,7 @@
 function calculateResult(){
     const  result = document.getElementById("result").innerHTML
     return result
-    let infinity
+    
 
     
 }
